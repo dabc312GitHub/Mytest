@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    cout << "print \"PythonLife\" " << endl;
 
     return 0;
 }
