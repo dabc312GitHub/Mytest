@@ -2,10 +2,13 @@
 #define VECTOR_H
 
 
-class vector
+class Vector
 {
 public:
-    vector();
+    double xStart;
+    double xEnd;
+    double yStart;
+    double yEnd;
 };
 
 #endif // VECTOR_H

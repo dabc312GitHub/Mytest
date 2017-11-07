@@ -1,42 +1,33 @@
 #include <iostream>
 using namespace std;
 
-/*
-int main(){
-    int m,n;
-        cin>>m>>n;
-    int A[m][n],B[m][n],C[m][n];
-    for(int i=0;i<m;i++){
-        for(int j=0;j<n;j++){
-            cout<<"A["<<i<<"]["<<j<<"]:";
-            cin>>A[i][j];
+void matriz(int m[][3], int nfilas, int ncol)
+{
+    cout<<"mostrando matriz original:\n";
+        for(int i=0; i<nfilas; i++)
+        {
+            for(int j=0; j<ncol; j++)
+            {
+                cout<<m[i][j]<<" ";
+            }
+        cout<<"\n";
         }
-    }
-    for(int i=0;i<m;i++){
-        for(int j=0;j<n;j++){
-            cout<<"B["<<i<<"]["<<j<<"]:";
-            cin>>B[i][j];
-        }
-    }
-    for(int i=0;i<m;i++){
-        for(int j=0;j<n;j++){
-            C[i][j]=A[i][j]+B[i][j];
-        }
-    }
-    for(int i=0;i<m;i++){
-        for(int j=0;j<n;j++){
-            cout<<C[i][j]<<endl;
-        }
-    }
+}
+
+int main()
+{
+    const int x = 2;
+    const int y = 3;
+    int m[x][y] = {{1,2,3},{4,5,6}};
+    matriz(m, x, y);
     return 0;
 }
 
-*/
 
 
 
 
-
+/*
 int mayor(int a[],int n){
     int i,may;
     may=a[0];
@@ -56,7 +47,7 @@ int main(){
         cout<<mayor(a,m);
     return 0;
 }
-
+*/
 
 
 

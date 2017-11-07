@@ -5,7 +5,7 @@ using namespace std;
 int suma(int a[], int i, int n, int sum){
     if(i<n)
         return suma(a,i+1,n,sum+a[i]);
-     return sum;
+    return sum;
 }
 
 

@@ -6,6 +6,10 @@ class a
 {
 public:
     a();
+    a(int);
+
+    int primer(int);
+    int p;
 };
 
 #endif // A_H

@@ -1,12 +1,20 @@
 #include <iostream>
 #include <cstdlib>
 #include <time.h>
+
+#include "bloques.h"
+#include "vector.h"
+
 using namespace std;
+
 
 #define MaxDimensiones 4
 
+#define Filas 17
+#define Columnas 11
 
-void bloques(int v[][MaxDimensiones]){
+
+void printBloque(int v[][MaxDimensiones]){
     for(int i = 0; i < MaxDimensiones; ++i) {
         for(int j = 0; j < MaxDimensiones; ++j) {
             cout << v[ i ][ j ] << " ";
@@ -17,22 +25,33 @@ void bloques(int v[][MaxDimensiones]){
     cout<<endl;
 }
 
-void invertirBloque(int v[][MaxDimensiones]){
-    for(int i = 0; i < MaxDimensiones; ++i) {
-        for(int j = 0; j < MaxDimensiones; ++j) {
-            cout << v[ j ][ i ] << " ";
-            if(j==MaxDimensiones-1)
-                cout<<endl;
+
+
+//PLATAFORMA
+void repetir(int a){
+    int v[Filas][Columnas];
+    for(int a=0; a<2;a++){
+        for(int i = 0; i < Filas ; ++i) {
+            for(int j = 0; j < Columnas ; ++j) {
+                v[i][j]= 0;
+                if(j==0 || j==Columnas-1 || i==Filas-1)
+                    v[i][j]= 1;
+
+                cout << v[ i /* aqui debe cambiar */ ] [ j/* aqui debe cambiar */ ] ;
+
+                if(j==Columnas-1)
+                    cout<<endl;
+
+            }
         }
-    }
     cout<<endl;
+    }
 }
 
 
 
 
-int main()
-{
+int main(){
     int T1[][MaxDimensiones] = { {0,0,0,0},
                                  {1,2,1,0},
                                  {0,1,0,0},
@@ -68,35 +87,50 @@ int main()
                                  {0,1,2,0},
                                  {0,0,0,0} };
 
-    int num=6, valAl;
+
+
+
+    //repetir(0);
+
+    cout<<endl<<endl;
+
+
+/*
+    int num=3, valAl;
     srand(time(NULL));
 
     for(int ind=1; ind<=num; ind++){
-           int valAl = 1 + rand() % 10 +1 ;
+           int valAl = rand() % 7 ;
 
         switch(valAl){
             case 1:
-                bloques(T1);
+                printBloque(T1);
 
             case 2:
-                bloques(T2);
+                printBloque(T2);
 
             case 3:
-                bloques(T3);
+                printBloque(T3);
 
             case 4:
-                bloques(T4);
+                printBloque(T4);
 
             case 5:
-                bloques(T5);
+                printBloque(T5);
 
             case 6:
-                bloques(T6);
+                printBloque(T6);
 
             default:
-                bloques(T7);
+                printBloque(T7);
 
         }
     }
+*/
+
+    vector o;
+    o.print();
+
+
     return 0;
 }

@@ -5,7 +5,10 @@
 class Vector
 {
 public:
-    Vector();
+    double xStart;
+    double xEnd;
+    double yStart;
+    double yEnd;
 };
 
 #endif // VECTOR_H

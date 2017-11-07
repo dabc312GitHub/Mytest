@@ -1,8 +1,9 @@
-#include <QCoreApplication>
+/******** Hola.cpp **********/
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
-
-    return a.exec();
+    QApplication app(argc, argv);
+    QLabel label( QString::fromUtf8("¡Hola Mundo!") );
+    label.show();
+    return app.exec();
 }
