@@ -3,11 +3,12 @@
 
 #include "polygon.h"
 
-class cuadrado:public polygon
+class cuadrado : public polygon
 {
 public:
-    cuadrado(double);
+    cuadrado(string, double);
     double area();
+    string tipo();
 
 };
 

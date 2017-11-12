@@ -1,7 +1,12 @@
 #include "triangulo.h"
 
-triangulo::triangulo(double a,double b) : polygon(a,b) {}
+triangulo::triangulo(string fig, double a,double b) : polygon(fig, a, b) {}
 
 double triangulo::area(){
     return base * altura / 2;
 }
+
+string triangulo::tipo(){
+    return figura;
+}
+

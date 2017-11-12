@@ -1,12 +1,16 @@
 #include "arrpoligono.h"
 
-/*
-arrPoligono::arrPoligono(double tam){
+arrPoligono::arrPoligono(int tam=0){
     this->tam=tam;
-    arr=new polygon* [tam];
+    arr = new polygon* [tam];
 }
-*/
+
 
 arrPoligono::arrPoligono(){
 
 }
+
+arrPoligono::~arrPoligono(){
+    delete[] arr;
+}
+

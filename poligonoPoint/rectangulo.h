@@ -3,11 +3,12 @@
 
 #include "polygon.h"
 
-class rectangulo:public polygon
+class rectangulo : public polygon
 {
 public:
-    rectangulo(double, double);
+    rectangulo(string, double, double);
     double area();
+    string tipo();
 };
 
 #endif // RECTANGULO_H

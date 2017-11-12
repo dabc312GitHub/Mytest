@@ -9,11 +9,14 @@ class polygon
 {
 protected:
   double base, altura;
+  string figura;
+
 public:
-  polygon (double, double);
-  polygon (double);
-  polygon ();
-  virtual double area () =0;
+  polygon (string, double, double);
+  polygon (string, double);
+  virtual string tipo()=0;
+  virtual double area ()=0;
+
   void printArea();
 };
 

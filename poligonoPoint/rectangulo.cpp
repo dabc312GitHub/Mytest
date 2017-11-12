@@ -1,8 +1,11 @@
 #include "rectangulo.h"
 
-rectangulo::rectangulo(double a,double b) : polygon(a,b) {}
+rectangulo::rectangulo(string fig, double a,double b) : polygon(fig, a, b) {}
 
 double rectangulo::area(){
     return base * altura;
 }
 
+string rectangulo::tipo(){
+    return figura;
+}

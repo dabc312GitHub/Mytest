@@ -5,10 +5,14 @@
 
 class arrPoligono
 {
-public:
-    arrPoligono();
-    arrPoligono** arr;
-    arrPoligono (double tam);
-};
 
+public:
+    polygon** arr;
+    int tam;
+
+    arrPoligono();
+    arrPoligono (int);
+    ~arrPoligono();
+
+};
 #endif // ARRPOLIGONO_H

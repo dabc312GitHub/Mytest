@@ -3,11 +3,13 @@
 
 #include "polygon.h"
 
-class triangulo:public polygon
+class triangulo : public polygon
 {
 public:
-    triangulo(double, double);
+    triangulo(string, double, double);
     double area();
+    string tipo();
+
 };
 
 #endif // TRIANGULO_H
